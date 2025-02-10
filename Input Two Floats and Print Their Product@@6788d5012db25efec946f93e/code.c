@@ -5,7 +5,7 @@ int main(){
     scanf("%f",&a);
     scanf("%f",&b);
 
-    product = a * b;
+    float product = a * b;
     printf("Product: %2.f", product);
     return 0;
 }
