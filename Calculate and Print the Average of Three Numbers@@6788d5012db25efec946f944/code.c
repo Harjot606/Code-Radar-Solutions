@@ -8,8 +8,8 @@ int main(){
     scanf("%d", &b);
     scanf("%d", &c);
 
-    int sum= a+b+c;
-    int average = sum/3;
+    float sum= a+b+c;
+    float average = sum/3;
 
     printf("Average: %.2f", average);
     return 0;
