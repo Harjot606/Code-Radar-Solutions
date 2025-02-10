@@ -11,6 +11,6 @@ int main(){
     int sum= a+b+c;
     int average = sum/3;
 
-    printf("Average: %d", average);
+    printf("Average: %.2d", average);
     return 0;
 }
