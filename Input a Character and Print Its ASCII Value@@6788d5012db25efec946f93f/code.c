@@ -7,7 +7,7 @@ int main(){
         printf("ASCII Value: 32");
     }
     else{
-    printf("ASCII Value: %d\n", ch);
+    printf("ASCII Value: %d\n",ch ,ch);
     }
     return 0;
 }
