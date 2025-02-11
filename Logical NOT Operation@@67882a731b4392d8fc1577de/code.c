@@ -5,7 +5,7 @@ int main(){
     scanf("%d",&a);
     scanf("%d",&b);
     
-    if (a!=0){
+    if (a!>0){
         printf("True");
 
     }
