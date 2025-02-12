@@ -1,5 +1,3 @@
-// Your code here...
-
 #include<stdio.h>
 int main(){
     int a,i;
@@ -24,5 +22,9 @@ int main(){
             printf("Not Prime");
         }
     
-    return 0;
+
+
+
+
+return 0;
 }
