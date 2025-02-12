@@ -3,7 +3,7 @@
 int main(){
     int a;
     int b;
-    char o
+    char o;
 
     if(o == '+'){
         int op = a + b;
