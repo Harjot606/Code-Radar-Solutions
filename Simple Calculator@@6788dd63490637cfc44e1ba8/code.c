@@ -5,6 +5,8 @@ int main(){
     int b;
     char o;
 
+    scanf("%d %d %c", &a &b &c);
+
     if(o == '+'){
         int op = a + b;
         printf("%d", op);
