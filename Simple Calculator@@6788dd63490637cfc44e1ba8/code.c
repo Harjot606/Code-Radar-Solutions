@@ -9,7 +9,6 @@ int main(){
     scanf("%d",&a);
     scanf("%d",&b);
 
-    getchar();
     scanf("%c",&op);
 
     if(op=='+'){
