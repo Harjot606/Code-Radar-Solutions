@@ -1,23 +1,22 @@
 #include<stdio.h>
 int main(){
-    int a,b;
+    int x,y;
     char o;
-
-    scanf("%d %d %c", &a, &b, &o);  // Corrected scanf syntax
-
+    scanf("%d %d %c", &x, &y, &o);
     if(o == '+'){
-        int op = a + b;
-        printf("%d", op);
-    }
+        int op = x + y;
+        printf("%d", op);}
     else if(o == '-'){
-        printf("%d", a-b);
-    }
-    else if(o == '/'){
-        printf("%d", a/b);
-    }
+        int op = x - y;
+        printf("%d",op);}
     else if(o == '*'){
-        printf("%d", a*b);
+        int op = x * y;
+        printf("%d",op);}
+    else if(o == '/'){
+        if(y==0){printf("error");}
+        else{
+            int op = x / y;
+            printf("%d",op);}
     }
-
     return 0;
 }
