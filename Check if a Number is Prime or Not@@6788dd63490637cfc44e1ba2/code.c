@@ -10,8 +10,9 @@ int main(){
     else{
         int IsPrime = 1;
         for(i=2;i<a;i++){
-            a % i == 0;
+            if(a % i == 0){
             IsPrime = 0;
+            }
             break;
         }
     }
