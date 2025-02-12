@@ -4,12 +4,24 @@
 int main(){
     int a;
     scanf("%d",&a);
-
-    if(a%1==0 && a%a==0){
-        printf("Prime");
-    }
-    else{
+    if(a<=1){
         printf("Not Prime");
     }
+    else{
+        IsPrime = 1;
+        for(i=2,i<a,i++){
+            a%i==0;
+            IsPrime = 0;
+            break;
+        }
+    }
+
+        if(IsPrime){
+            printf("Prime");
+        }
+        else{
+            printf("Not Prime");
+        }
+    
     return 0;
 }
