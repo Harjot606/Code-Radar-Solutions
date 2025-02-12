@@ -9,5 +9,5 @@ int main(){
     printf("You entered: %c", a);
     printf(" %c",b);
 
-    return0 0;
+    return 0;
 }
