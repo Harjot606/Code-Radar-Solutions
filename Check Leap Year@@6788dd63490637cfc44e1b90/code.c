@@ -9,7 +9,7 @@ int main(){
 
     }
     else{
-        printf("Not a Lear Year");
+        printf("Not a Leap Year");
     }
     return 0;
 }
