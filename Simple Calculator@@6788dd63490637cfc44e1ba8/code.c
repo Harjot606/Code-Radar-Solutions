@@ -3,16 +3,11 @@
 int main(){
     int a;
     int b;
+    char o
 
-    char op;
-
-    scanf("%d",&a);
-    scanf("%d",&b);
-
-    scanf(" %c",&op);
-
-    if(op=='+'){
-        printf("%d", a+b);
+    if(o == '+'){
+        int op = a + b;
+        printf("%d", op);
     }
     else if(op=='-'){
         printf("%d", a-b);
