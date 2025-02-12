@@ -1,6 +1,6 @@
 // Your code here...
 #include<stdio.h>
-int mian(){
+int main(){
     int a;
     int b;
 
@@ -8,6 +8,7 @@ int mian(){
     scanf("%d",&b);
 
     int sqr = b*b;
+
     if(a==sqr){
         printf("Yes");
     }
