@@ -2,11 +2,11 @@
 #include<stdio.h>
 int main()
 {
-    int a;
+    int a,BITS;
     int msb;
     scanf("%d", &a);
     
-    int msb = 1<<(BITS-1);
+    msb = 1<<(BITS-1);
     if (a&msb){
         printf("Set");
     }
