@@ -7,8 +7,8 @@ int main(){
     scanf("%d",&a);
 
     for(i=1;i<=a;i++){
-        for(j=1;j<=(2n-1);j++){
-            if(j>=(n-(i-1)) && j>= (n-(i+1))){
+        for(j=1;j<=(2a-1);j++){
+            if(j>=(a-(i-1)) && j<= (a-(i+1))){
                 printf("* ");
             }
             else{
