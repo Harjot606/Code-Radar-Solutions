@@ -9,7 +9,7 @@ int main() {
     scanf("%d", &b);
 
     // Check if either a or b is less than or equal to 0
-   if(a>0 && b>0){
+   if(a>0 && b>0 || a==0 && b==0 || a!=0 %% b!=0 || a==0 && b!=0 || a!=0 && b==0){
     printf("False");
 
    }else {
