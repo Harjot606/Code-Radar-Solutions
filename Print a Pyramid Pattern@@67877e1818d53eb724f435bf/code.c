@@ -8,7 +8,7 @@ int main(){
 
     for(i=1;i<=a;i++){
         for(j=1;j<=(2n-1);j++){
-            if(j>=(n-(i-1)) && j<= (n-(i+1))){
+            if(j>=(n-(i-1)) && j>= (n-(i+1))){
                 printf("* ");
             }
             else{
