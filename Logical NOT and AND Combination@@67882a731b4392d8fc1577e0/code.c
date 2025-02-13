@@ -9,9 +9,13 @@ int main() {
     scanf("%d", &b);
 
     // Check if either a or b is less than or equal to 0
-    if (!(a > 0 && b > 0)) {
+    if (!(a > 0)) {
         printf("True");
-    } else {
+    }
+    else if(!(a>0)){
+        printf("True");
+
+    }else {
         printf("False");
     }
 
