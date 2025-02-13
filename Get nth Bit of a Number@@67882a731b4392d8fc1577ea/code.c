@@ -8,11 +8,12 @@ int main(){
     scanf("%d", &b);
 
     int mask = 1<<b;
+
     if(a&mask){
-        printf("%d",n);
+        printf("%d",b);
     }
     else{
-        printf("%d",n);
+        printf("%d",b);
     }
 
     return 0;
