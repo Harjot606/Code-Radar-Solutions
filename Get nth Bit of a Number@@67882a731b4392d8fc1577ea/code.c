@@ -10,10 +10,10 @@ int main(){
     int mask = 1<<b;
 
     if(a&mask){
-        printf("%d",b);
+        printf("%The %dth bit is set (1).\n",b);
     }
     else{
-        printf("%d",b);
+        printf("The %dth bit is set (1).\n",b);
     }
 
     return 0;
