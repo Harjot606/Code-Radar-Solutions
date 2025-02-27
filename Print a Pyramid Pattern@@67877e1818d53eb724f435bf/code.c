@@ -1,19 +1,23 @@
 #include<stdio.h>
+
 int main(){
     int N;
-    scanf("%d", &N);
-    int i,j,k;
+    scanf("%d", &N);  // Get the number of rows for the pyramid
+    int i, j, k;
 
-    for(i=0; i<=N ; i++){
-
-        for(j=N ; j>=1 ; j--){
+    // Loop for each row
+    for(i = 1; i <= N; i++){
+        // Loop for spaces before the stars
+        for(j = i; j < N; j++){
             printf(" ");
-            }
-        for(k=1 ; k<= (i*2)-1 ; k++){
+        }
+        // Loop for printing stars
+        for(k = 1; k <= (2 * i - 1); k++){
             printf("*");
         }
+        // Move to the next line after each row
         printf("\n");
-
     }
+
     return 0;
 }
