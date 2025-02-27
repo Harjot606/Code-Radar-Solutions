@@ -1,23 +1,19 @@
-// Your code here...
 #include<stdio.h>
 int main(){
-    int a;
-    int i,j;
+    int N;
+    scanf("%d", &N);
+    int i,j,k;
 
-    scanf("%d",&a);
+    for(i=1; i<=N ; i++){
 
-    for(i=1;i<=a;i++){
-        for(j=1;j<(2*a-1);j++){
-            if(j>=(a-(i-1)) && j>= (a-(i+1))){
-                printf("*");
+        for(j=N ; j>=1 ; j--){
+            printf(" ");
             }
-            else{
-                printf(" ");
-            }
-
+        for(k=1 ; k<= (i*2)-1 ; k++){
+            printf("*");
         }
         printf("\n");
-    }
 
+    }
     return 0;
 }
