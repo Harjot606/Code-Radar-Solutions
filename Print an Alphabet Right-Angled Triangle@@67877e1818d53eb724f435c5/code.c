@@ -1,17 +1,23 @@
 // Your code here...
 #include<stdio.h>
-int main(){
+
+int main() {
     int n;
-    int i,j;
-    char letter= 'A';
+    int i, j;
+    char letter = 'A';  // Start with 'A'
+    
     scanf("%d", &n);
 
-    for(i=1;i<=n; i++){
-        for(j=1;j<=i;j++){
+    // Outer loop for each row
+    for(i = 1; i <= n; i++) {
+        // Print alphabets from 'A' to the i-th letter
+        for(j = 1; j <= i; j++) {
             printf("%c ", letter);
-            letter++;
+            letter++;  // Increment to the next alphabet
         }
         printf("\n");
     }
+
     return 0;
 }
+
