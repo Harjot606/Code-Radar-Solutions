@@ -6,7 +6,7 @@ int main(){
     char letter= 'A';
     scanf("%d", &n);
 
-    for(i=1;i<=N; i++){
+    for(i=1;i<=n; i++){
         for(j=1;i<=i;j++){
             printf("%c", letter);
         }
