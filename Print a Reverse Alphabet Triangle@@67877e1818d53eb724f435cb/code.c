@@ -10,7 +10,7 @@ int main(){
     for(i=n;i>=1;i--){
         letter = 'A';
         for(j=1;j<=i;j++){
-            printf("%c", letter);
+            printf("%c ", letter);
             letter++;
         }
         printf("\n");
