@@ -1,4 +1,4 @@
-// Your code here...
+
 #include <stdio.h>
 
 void bubbleSort(int arr[], int n) {
@@ -24,5 +24,4 @@ void bubbleSort(int arr[], int n) {
         printf("%d ", arr[i]);
     }
     
-    return 0;
-}
+
