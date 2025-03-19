@@ -8,6 +8,6 @@ int main(){
 
     int mask = 1 << n;
     number = number^mask;
-    prinntf("%d", number);
+    printf("%d", number);
     return 0;
 }
