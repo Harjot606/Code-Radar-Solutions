@@ -1,12 +1,19 @@
 #include <stdio.h>
 
 int main() {
-    int number, bitPosition;
-    scanf("%d", &number);
-    scanf("%d", &bitPosition);
+    int number, n, bitValue;
 
-    // Output the value of the nth bit
-    printf(" %d\n", bitPosition, (number >> bitPosition) & 1);
-    
+    // Input the number and the bit position
+    printf("Enter a number: ");
+    scanf("%d", &number);
+    printf("Enter the bit position (n): ");
+    scanf("%d", &n);
+
+    // Use bitwise AND operation with a mask to retrieve the nth bit
+    bitValue = (number >> n) & 1;
+
+    // Output the result
+    printf("The value of the %d-th bit is: %d\n", n, bitValue);
+
     return 0;
 }
