@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 int main() {
@@ -13,7 +14,8 @@ int main() {
     bitValue = (number >> n) & 1;
 
     // Output the result
-    printf("%d\n", n, bitValue);
+    printf("%d\n", bitValue);  // Print only the result without additional text
 
     return 0;
 }
+
