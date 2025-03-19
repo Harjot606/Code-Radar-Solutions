@@ -5,11 +5,9 @@ int main() {
     int n;
 
     // Get input from the user
-    printf("Enter a number: ");
     scanf("%d", &n);
 
     if (n == 0) {
-        printf("There is no set bit in the number.\n");
         return 0;
     }
 
