@@ -1,25 +1,17 @@
-// Your code here...
-#include <stdio.h>
-int main(){
-    int a;
-    scanf("%d",&a);
-    int arr[a];
-    for(int i=0;i<a;i++){
-        int n;
-        scanf("%d",&n);
-        arr[i]=n;
-    }
-    int largest=arr[0];
-    int smallest=arr[0];
-    for(int i=0;i<a;i++){
-        if (arr[i]>largest){
-            largest=arr[i];
+int isPrime(num){
+    int IsPrime = 1;
+    for(int i=0;i<num;i++){
+        if(i%num==0){
+            IsPrime = 0;
+            break;
         }
-        if (arr[i]<smallest){
-            smallest=arr[i];
+     
+        }
+
+        if(IsPrime){
+            printf("1");
+        }
+        else{
+            printf("0");
         }
     }
-    printf("%d %d",&smallest,&largest);
-
-
-}
