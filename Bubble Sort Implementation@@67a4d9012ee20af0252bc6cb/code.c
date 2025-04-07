@@ -1,8 +1,8 @@
 bubbleSort(arr,n){
     for(int b=0;b<n-1;b++){
 
-    for(int k=0;k<n-1;k++){
-    if(a[k]>a[k+1]){
+    for(int k=0;k<n-1-b;k++){
+    if(arr[k]>arr[k+1]){
         int temp =arr[k];
         arr[k]=arr[k+1];
         arr[k+1]= temp;   
