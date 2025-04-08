@@ -13,7 +13,7 @@ int fibonacciSeries(int n){
     printf("0 1\t");
     for(int i=2;i<n;i++){
         fib[i]=fib[i-1]+fib[i-2];
-        printf("%d\t", fib[i]);
+        printf("%d", fib[i]);
     }
     printf("\n");
     return 0;
