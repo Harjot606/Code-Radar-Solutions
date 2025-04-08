@@ -6,9 +6,9 @@ int fibonacciSeries(int n){
         nextterm=t1+t2;
         printf("%d", nextterm);
         t1=t2;
-        t2=nexterm;
+        t2=nextterm;
     
     }
     printf("\n");
-    
+
 }
