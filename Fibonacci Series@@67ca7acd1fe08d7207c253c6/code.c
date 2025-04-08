@@ -8,7 +8,7 @@ int fibonacciSeries(int n){
    }
    else{
     for(int i=2;i<n;i++){
-        int fib[i]=fib[i-1]+fib[i-2];
+        fib[i]=fib[i-1]+fib[i-2];
         printf("%d\t", fib[i]);
     }
     printf("\n");
