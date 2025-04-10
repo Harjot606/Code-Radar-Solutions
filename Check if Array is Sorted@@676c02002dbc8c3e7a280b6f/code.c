@@ -2,10 +2,10 @@
 int sorted_arr(int arr[], int N){
     for(int i=0;i<=N-1;i++){
         if(arr[i]>arr[i+1]){
-            return false;
+            return 0;
         }
     }
-    return true;
+    return 1;
 }
 
 int main(){
