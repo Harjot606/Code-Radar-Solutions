@@ -1,7 +1,7 @@
 #include<stdio.h>
 void sorted_arr(int arr[], int N){
-    for(int i=0;i<=n-1;i++){
-        if(arr[i]>arr[i+n]){
+    for(int i=0;i<=N-1;i++){
+        if(arr[i]>arr[i+1]){
             return false;
         }
     }
