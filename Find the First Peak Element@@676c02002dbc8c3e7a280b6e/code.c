@@ -1,25 +1,27 @@
-// Your code here...
 #include<stdio.h>
+int first_peak(int arr[], int N){
+    if(N==1)
+        return arr[0];
+    
+    else if(arr[0]>=arr[1])
+        return arr[0];
+    
+    for(int j=0;j<N-1;j++){
+        if(arr[j]>arr[j-1] && arr[j]>arr[j+1]){
+            return arr[j];
+        }
+    }
+}
 int main(){
     int N;
     scanf("%d", &N);
-
-    int arr[N];
-    for(int i=0;i<N;i++){
+     int arr[N];
+     for(int i=0;i<N;i++){
         scanf("%d", &arr[i]);
-    }
+     }
+    int peak = first_peak(int arr[N], int N);
+    printf("%d", peak);
 
-    if(arr[0]>arr[1] && arr[1]>arr[2] && arr[2]>arr[3]){
-        printf("%d", arr[0]);
-    }
-    else if(arr[1]>arr[0] && arr[0]>arr[2] && arr[2]>arr[3]){
-        printf("%d", arr[1]);
-    }
-    else if(arr[2]>arr[1] && arr[1]>arr[0] && arr[0]>arr[3]){
-        printf("%d", arr[2]);
-    }
-    else if(arr[3]>arr[0] && arr[0]>arr[1] && arr[1]>arr[2]){
-        printf("%d", arr[3]);
 
-    }
+    return 0;
 }
