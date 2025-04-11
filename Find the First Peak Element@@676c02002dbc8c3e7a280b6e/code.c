@@ -6,7 +6,7 @@ int first_peak(int arr[], int N){
     else if(arr[0]>=arr[1])
         return arr[0];
     
-    for(int j=0;j<N-1;j++){
+    for(int j=1;j<N-1;j++){
         if(arr[j]>arr[j-1] && arr[j]>arr[j+1]){
             return arr[j];
         }
