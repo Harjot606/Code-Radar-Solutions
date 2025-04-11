@@ -1,25 +1,36 @@
 #include<stdio.h>
-int sorted_arr(int arr[], int N){
-    for(int i=0;i<=N-1;i++){
-        if(arr[i]>arr[i+1]){
-            return 0;
+
+int sorted_arr(int arr[], int N) {
+    for (int i = 0; i < N - 1; i++) { // Loop until N-1
+        if (arr[i] > arr[i + 1]) { // Compare adjacent elements
+            return 0; // Return 0 if not sorted
         }
     }
-    return 1;
+    return 1; // Return 1 if sorted
 }
 
-int main(){
+int main() {
     int N;
-    scanf("%d", &N);
-    int arr[N];
-    for(int j=0;j<N;j++){
+    printf("Enter the size of the array: ");
+    scanf("%d", &N); // Input array size
+
+    if (N <= 0) {
+        printf("Invalid array size. Please enter a positive number.\n");
+        return 1; // Exit program if size is invalid
+    }
+
+    int arr[N]; // Declare array with size N
+    printf("Enter %d elements of the array:\n", N);
+    for (int j = 0; j < N; j++) { // Loop to input array elements
         scanf("%d", &arr[j]);
     }
 
-    if(sorted_arr){
-        printf("Sorted");
+    // Call the sorted_arr function and check the result
+    if (sorted_arr(arr, N)) {
+        printf("Sorted\n");
+    } else {
+        printf("Not Sorted\n");
     }
-    else{
-        printf("Not Sorted");
-    }
+
+    return 0;
 }
