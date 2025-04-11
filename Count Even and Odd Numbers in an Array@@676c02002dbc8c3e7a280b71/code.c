@@ -2,7 +2,7 @@
 int odd_even(int arr[], int N){
     int odd=0;
     int even=0;
-    for(i=0;i<N;i+++){
+    for(int i=0;i<N;i++){
         if(arr[i]%2==0){
             even=even+1;
         }
