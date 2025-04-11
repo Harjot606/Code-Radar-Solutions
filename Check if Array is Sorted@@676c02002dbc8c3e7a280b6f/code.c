@@ -10,9 +10,10 @@ int sorted_arr(int arr[], int N){
 
 int main(){
     int N;
+    scanf("%d", &N);
     int arr[];
     for(j=0;j<N;j++){
-        scanf("%d", &arr[]);
+        scanf("%d", &arr[j]);
     }
 
     if(sorted_arr){
