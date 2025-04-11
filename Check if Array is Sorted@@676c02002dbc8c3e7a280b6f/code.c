@@ -11,7 +11,7 @@ int sorted_arr(int arr[], int N){
 int main(){
     int N;
     scanf("%d", &N);
-    int arr[];
+    int arr[N];
     for(int j=0;j<N;j++){
         scanf("%d", &arr[j]);
     }
