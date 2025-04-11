@@ -2,7 +2,7 @@
 #include<stdio.h>
 int count_int(int arr[], int N,int K){
     int count=0;
-    for(int i=0;i<N-1;i++){
+    for(int i=0;i<N;i++){
         if(arr[i]>K){
             count=count+1;
         }
