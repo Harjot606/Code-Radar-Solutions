@@ -11,16 +11,13 @@ int sorted_arr(int arr[], int N) {
 
 int main() {
     int N;
-    printf("Enter the size of the array: ");
     scanf("%d", &N); // Input array size
 
     if (N <= 0) {
-        printf("Invalid array size. Please enter a positive number.\n");
         return 1; // Exit program if size is invalid
     }
 
     int arr[N]; // Declare array with size N
-    printf("Enter %d elements of the array:\n", N);
     for (int j = 0; j < N; j++) { // Loop to input array elements
         scanf("%d", &arr[j]);
     }
