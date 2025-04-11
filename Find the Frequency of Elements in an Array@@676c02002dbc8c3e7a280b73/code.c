@@ -6,7 +6,7 @@ int frequency_int(int arr[], int N){
         if(arr[i]==-1){
             continue;
         }
-        for(int j=i+1;j<N;i++){
+        for(int j=i+1;j<N;j++){
             if(arr[i]==arr[j]){
                 count+=1;
                 arr[j]= -1;
