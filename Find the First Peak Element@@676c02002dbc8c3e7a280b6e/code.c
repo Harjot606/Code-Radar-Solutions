@@ -19,7 +19,7 @@ int main(){
      for(int i=0;i<N;i++){
         scanf("%d", &arr[i]);
      }
-    int peak = first_peak(arr[], N);
+    int peak = first_peak(arr, N);
     printf("%d", peak);
 
 
