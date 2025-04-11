@@ -11,7 +11,7 @@ int large_small(int arr[], int N){
 }
 int small_large(int arr[], int N){
     int min=arr[0];
-    for(i=1;i<N;i++){
+    for(int i=1;i<N;i++){
         if(arr[i]<min){
             min=arr[i];
         }
