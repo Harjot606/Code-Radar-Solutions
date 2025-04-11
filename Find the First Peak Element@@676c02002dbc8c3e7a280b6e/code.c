@@ -6,7 +6,7 @@ int first_peak(int arr[], int N) {
         return arr[0];
     
     // If the first element is greater than or equal to the second, return it as the peak
-    else if (arr[0] >= arr[1])
+    if (arr[0] >= arr[1])
         return arr[0];
     
     // Loop through the middle elements to check for peak
@@ -21,7 +21,7 @@ int first_peak(int arr[], int N) {
         return arr[N - 1];
     }
 
-    // If no peak found, return -1 (this should not happen for non-decreasing arrays)
+    // If no peak found, return -1
     return -1;
 }
 
@@ -40,7 +40,7 @@ int main() {
     }
 
     int peak = first_peak(arr, N);
-    printf("%d", peak);
+    printf("%d\n", peak);
  
     return 0;
 }
