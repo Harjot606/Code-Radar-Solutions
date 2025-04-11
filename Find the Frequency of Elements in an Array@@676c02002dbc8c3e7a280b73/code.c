@@ -19,7 +19,7 @@ int main(){
     for(int i=0;i<N;i++){
         scanf("%d", &arr[i]);
     }
-    int frequency(arr,N);
+    frequency(arr,N);
 
     return 0;
 
