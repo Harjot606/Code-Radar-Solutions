@@ -10,6 +10,8 @@ int odd_even(int arr[], int N){
             odd=odd+1;
         }
     }
+    return even;
+    return odd;
 }
 int main(){
     int N;
@@ -19,7 +21,8 @@ int main(){
     for(int i=0;i<N;i++){
         scanf("%d", &arr[i]);
     }
-    printf("%d %d", even, odd);
+    int result= odd_even(arr,N);
+    printf("%d", result);
 
     return 0;
 
