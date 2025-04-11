@@ -1,12 +1,12 @@
 #include<stdio.h>
 int frequency(int arr[], int N){
     
-    for(int i=0;i<N-1;i++){
+    for(int i=0;i<N;i++){
         int count=1;
         if(arr[i]==-1){
             continue;
         }
-        for(int j=i+1;j<N-1;i++){
+        for(int j=i+1;j<N;i++){
             if(arr[i]==arr[j]){
                 count+=1;
                 arr[j]= -1;
