@@ -1,5 +1,5 @@
 #include<stdio.h>
-int frequency(int arr[], int N){
+int frequency_int(int arr[], int N){
     
     for(int i=0;i<N;i++){
         int count=1;
@@ -23,7 +23,7 @@ int main(){
     for(int i=0;i<N;i++){
         scanf("%d", &arr[i]);
     }
-    frequency(arr,N);
+    frequency_int(arr,N);
 
     return 0;
 
