@@ -11,8 +11,8 @@ int first_peak(int arr[], int N){
             return arr[j];
         }
     }
-    if(arr[N-1]>arr[N-2])
-        return arr[N-1];
+    if(arr[N-1]>arr[N-2]){
+        return arr[N-1];}
     
     return -1;
 }
