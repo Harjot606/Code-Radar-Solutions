@@ -9,11 +9,11 @@ int even_int(int arr[], int N){
     }
     return even;
 }
-int eodd_int(int arr[], int N){
+int odd_int(int arr[], int N){
 
     int odd=0;
     for(int i=0;i<N;i++){
-        if(arr[i]%2==0){
+        if(arr[i]%2!=0){
             odd=odd+1;
         }
     }
