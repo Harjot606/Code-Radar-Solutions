@@ -1,5 +1,5 @@
 #include<stdio.h>
-int sorted_arr(int arr[N], int N){
+int sorted_arr(int arr[], int N){
     for(int i=0;i<=N-1;i++){
         if(arr[i]>arr[i+1]){
             return 0;
@@ -10,7 +10,7 @@ int sorted_arr(int arr[N], int N){
 
 int main(){
     int N;
-    int arr[N];
+    int arr[];
     for(j=0;j<N;j++){
         scanf("%d", &arr[]);
     }
