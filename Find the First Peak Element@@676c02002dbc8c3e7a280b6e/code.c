@@ -26,6 +26,8 @@ int main(){
 
     int peak = first_peak(arr, N);
     printf("%d", peak);
-
+    else{
+        printf("-1");
+    }
     return 0;
 }
