@@ -1,9 +1,9 @@
 // Your code here...
 #include<stdio.h>
 int count_int(int arr[], int N,int K){
-    count=0;
+    int count=0;
     for(int i=0;i<N;i++){
-        if(arr[i]>k){
+        if(arr[i]>K){
             count=count+1;
         }
     }
@@ -20,7 +20,7 @@ int main(){
         scanf("%d", &arr[i]);
     }
 
-    int result= count_int(arr,N);
+    int result= count_int(arr,N,K);
     printf("%d",result);
 
     return 0;
