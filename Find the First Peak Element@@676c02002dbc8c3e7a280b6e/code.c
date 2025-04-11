@@ -12,9 +12,8 @@ int first_peak(int arr[], int N){
         }
     }
     if(arr[N-1]>arr[N-2]){
-        return arr[N-1];}
-    
-    return -1;
+        return arr[N-1];
+        }
 }
 int main(){
     int N;
@@ -23,8 +22,13 @@ int main(){
      for(int i=0;i<N;i++){
         scanf("%d", &arr[i]);
      }
+     if(first_peak(arr,N)){
     int peak = first_peak(arr, N);
-    printf("%d", peak);
+    printf("%d", peak);}
+
+    else{
+        printf("-1");
+    }
 
 
     return 0;
