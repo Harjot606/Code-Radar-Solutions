@@ -9,6 +9,15 @@ int large_small(int arr[], int N){
     }
     return max; 
 }
+int small_large(int arr[], int N){
+    int min=arr[0];
+    for(i=1;i<N;i++){
+        if(arr[i]<min){
+            min=arr[i];
+        }
+    }
+    return min; 
+}
 int main(){
     int N;
     scanf("%d",&N);
@@ -19,7 +28,8 @@ int main(){
     }
 
     int maxi= large_small(arr,N);
-    printf("%d", maxi);
+    int mini= small_large(arr,N);
+    printf("%d %d",mini, maxi);
 
     return 0;
 
